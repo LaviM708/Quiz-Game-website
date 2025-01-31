@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="/CSS/styles.css" rel="stylesheet">`
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+      <a href="/HTML/index.html" id="sign-in">Sign in</a>
+      <a href="/HTML/registration.html" id="register">Register</a>
+      <a href="/HTML/quiz.html" onclick="checkLogin(event)" >Play</a>
+      <a href="/HTML/ranking.html">Leaderboard</a>
+      <a class="howtoplay" href="/HTML/howtoplay.html">How to play?</a>
+      <a id="logout" onclick="logout()">Sign Out</a>
+  </nav>
+  <!-- Sign in Header -->
+  <h1>Sign in</h1>
+    <!-- Input Fields for Login -->
+  <div id="input-fields">
+    <div>GameID: <input type="text" id="GameID"></div>
+    <div>Password: <input type="password" id="Password"></div>
+    <div>  <button onclick="login()" class="button">Play</button></div>  
+  </div>
+
+  <!-- Login failure message -->
+  <p id="loginFailure"></p>
+
+  <!-- JavaScript File -->
+  <script src="/JS/registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="/CSS/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <a href="/HTML/index.html" id="sign-in">Sign in</a>
+    <a href="/HTML/registration.html" id="register">Register</a>
+    <a href="/HTML/quiz.html">Play</a>
+    <a href="/HTML/ranking.html">Leaderboard</a>
+    <a class="howtoplay" href="/HTML/howtoplay.html">How to play?</a>
+    <a id="logout" onclick="logout()">Sign Out</a>
+  </nav>
+
+  <!-- Main content -->
+  <div class="app">
+      <h1>Quiz Game</h1>
+      <!-- Quiz Section with Qurstions and Answers-->
+    <div class="quiz">
+      <h2 id="question-text">Question will appear here</h2>
+      <div id="answer-buttons">
+        <button class="btn">A1</button>
+        <button class="btn">A2</button>
+        <button class="btn">A3</button>
+        <button class="btn">A4</button>
+      </div>
+      <!-- buttons for Resrtarting Quiz or going to leaderboard at the end of Game -->
+      <button id="restart-btn" onclick="startQuiz()" style="display: none;">Restart Quiz</button>
+      <button id="leaderboard-btn" onclick="goToLeaderboard()" style="display: none;">Go to Leaderboard</button>
+      <p id="result"> </p>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="/JS/quiz.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

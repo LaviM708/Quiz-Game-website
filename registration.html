@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="/CSS/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <a href="/HTML/index.html" id="sign-in">Sign in</a>
+    <a href="/HTML/registration.html" id="register">Register</a>
+    <a href="/HTML/quiz.html" onclick="checkLogin(event)" >Play</a>
+    <a href="/HTML/ranking.html">Leaderboard</a>
+    <a class="howtoplay" href="/HTML/howtoplay.html">How to play?</a>
+    <a id="logout" onclick="logout()">Sign Out</a>
+  </nav>
+
+    <!-- Registration Form -->
+  <h1>Sign up</h1>
+  <div id="input-fields">
+    <div>GameID: <input type="text" id="GameID"></div>
+    <div>UserName: <input type="text" id="UserName" ></div>
+    <div>Password: <input type="password" id="Password"></div>
+    <div>Age: <input type="number" id="Age"></div>
+    <div>Email Address: <input type="email" id="Email"></div>
+    <div class="skilllevel">
+      Skill Level : 
+        <input type="radio" name="skill" value="Beginner" id="Beginner">
+        <label for="Beginner">Beginner</label><br>
+        <input type="radio" name="skill" value="Intermediate" id="Intermediate">
+        <label for="Intermediate">Intermediate</label><br>
+        <input type="radio" name="skill" value="Expert" id="Expert">
+        <label for="Expert">Expert</label>
+    </div>      
+    <div>  <button onclick="storeUser()" class="button">Register</button></div> 
+    <p id="Result"></p>
+  </div>
+  
+  <!-- JavaScript File -->
+  <script src="/JS/registration.js"></script>
+</body>
+</html>

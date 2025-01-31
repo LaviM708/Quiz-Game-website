@@ -1,0 +1,136 @@
+/* Background with a gradient */
+body {
+  background: linear-gradient(135deg, #D8BFD8, #F5F5F5);
+}
+
+/* Navigation bar */
+nav > a, .howtoplay {
+  color:rgb(65, 12, 12);
+  font-family: 'Baloo Bhai 2', cursive;
+  font-weight: 550;
+  font-size: 40px;
+  position: relative;
+  left:20px;
+  border: 5px solid transparent;
+  padding: 5px;
+  margin:10px; 
+} 
+
+/* Main heading */
+h1{
+    color: rgb(54, 8, 98);
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 60px;
+    position: relative;
+    text-align: center;
+    bottom: 1px; 
+    
+}
+#input-fields{
+  border: 5px solid transparent;
+}
+
+/* input fields, quiz, and leaderboard sections */
+#input-fields > div, .quiz , #leaderboard {
+    align-items: center;
+    color: rgb(3, 2, 23);
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 35px;
+    text-align: center; 
+    margin:20px;
+    border: 5px solid transparent;
+    
+}
+
+input{
+    color: rgb(211, 27, 27);
+    font-family: 'Baloo Bhai 2';
+    font-size: 33px;
+    margin-left: 10;
+    padding: 2px;
+    border: 2px solid #8d0e0e;
+    border-radius: 19px;
+    max-width: 270px;
+    box-sizing: border-box;
+}    
+
+/* buttons with the .button class */
+.button{
+  background-color:rgb(137, 132, 243);
+  border-radius: 40px;
+  color: rgb(59, 10, 44);
+  padding: 12px 28px;
+  display: inline-block;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+#loginFailure{
+  text-align: center;
+  color: #fd0f0f;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+}
+
+
+.error-message {
+  color: red; 
+  font-size: 25px; 
+  padding: 10px; 
+  margin: 10px 0;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  position:relative;
+  bottom: 900px;
+  left:1480px;
+}
+
+/* for question text in quiz */
+#question-text{
+  font-size: 40px;
+}
+
+/* for answers in the quiz */
+.btn{
+  background: #9020f1;
+  color: #ffffff;
+  font-weight: 700;
+  width: 200px;
+  border: 7px solid #d4e60c;
+  padding:10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size:25px;
+}
+.btn:hover{
+  background: #d3cfcf;
+  color: #fff;
+}
+
+/* control buttons (next, restart, leaderboard)  */
+#next-btn, #restart-btn, #leaderboard-btn{
+  background: #0e2344;
+  color: #fff;
+  font-weight: 500;
+  width: 250px;
+  border: 4px solid #95ade9;
+  padding: 10px;
+  margin-top: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* Registration result message  */
+#Result {
+  color:green;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-weight:600;
+
+}
+
